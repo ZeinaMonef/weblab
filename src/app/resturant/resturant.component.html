@@ -1,0 +1,38 @@
+<div>
+  <div class="mt -5 container">
+
+    <table class="table tabl-striped table-bordered">
+           <thead>
+            <tr>
+              <th>ID</th>
+              <th>resturant name</th>
+              <th>location</th>
+              <th>cuisine_type</th>
+              <th>opening_hour</th>
+              <th>contact_number</th>
+              <th>manager_name</th>
+              <th>established</th>
+              <th>rating</th>
+              <th>is_vegetarian</th>
+              <th>website_url</th>
+            </tr>
+           </thead>
+           <tbody>
+
+             <tr *ngFor="let item of restaurant">
+              <td>{{item.restaurant_id}}</td>
+              <td>{{item.name}}</td>
+              <td>{{item.location}}</td>
+              <td>{{item.cuisine_type}}</td>
+              <td>{{item.opening_hours}}</td>
+              <td>{{item.contact_number}}</td>
+              <td>{{item.manager_name}}</td>
+              <td>{{item.established_date}}</td>
+              <td>{{item.rating}}</td>
+              <td>{{item.is_vegetarian}}</td>
+              <td>{{item.website_url}}</td>
+            </tr>
+           </tbody>
+    </table>
+  </div>
+</div>
