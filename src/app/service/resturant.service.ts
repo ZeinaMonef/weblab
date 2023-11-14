@@ -29,6 +29,6 @@ export class ResturantService {
   constructor(private httpclient:HttpClient) { }
 
   getresturantlist():Observable<any>{
-    return this.httpclient.get('http://localhost');
+    return this.httpclient.get('http://localhost:8080/api/get/restaurant');
   }
 }
